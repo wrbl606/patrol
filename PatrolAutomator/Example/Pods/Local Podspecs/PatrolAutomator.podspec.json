@@ -1,0 +1,22 @@
+{
+  "name": "PatrolAutomator",
+  "version": "0.1.0",
+  "summary": "A short description of PatrolAutomator.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/bartekpacia/PatrolAutomator",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "bartekpacia": "barpac02@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/bartekpacia/PatrolAutomator.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "13.0"
+  },
+  "source_files": "PatrolAutomator/Classes/**/*"
+}

@@ -1,0 +1,6 @@
+framework module PatrolAutomator {
+  umbrella header "PatrolAutomator-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - PatrolAutomator (0.1.0)
+
+DEPENDENCIES:
+  - PatrolAutomator (from `../`)
+
+EXTERNAL SOURCES:
+  PatrolAutomator:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PatrolAutomator: 5c41cb28923bb6c96598940d036611bf8a5dbca7
+
+PODFILE CHECKSUM: dfab06d604dbe5fbc192b923f9d86a09807a6d08
+
+COCOAPODS: 1.11.3

@@ -1,0 +1,665 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		652262FCE66812D672541F4AD2FFAFC9 /* Pods-PatrolAutomator_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 840C3F9272EFD407A979C02C66BAD0DF /* Pods-PatrolAutomator_Tests-dummy.m */; };
+		657C460A366184F7BA558D43C060DFF8 /* Pods-PatrolAutomator_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B66E038462ED8C0E20BF3383A14F1E1 /* Pods-PatrolAutomator_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85B2627AF7E48323E62D1917ED2B68CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		987E536D2955AB4200A78E9F /* PatrolIntegrationTestRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = 987E53602955AB4200A78E9F /* PatrolIntegrationTestRunner.m */; };
+		987E536E2955AB4200A78E9F /* PatrolIntegrationTestRunner.h in Headers */ = {isa = PBXBuildFile; fileRef = 987E53612955AB4200A78E9F /* PatrolIntegrationTestRunner.h */; };
+		987E53712955AB4200A78E9F /* PatrolServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987E53652955AB4200A78E9F /* PatrolServer.swift */; };
+		987E53722955AB4200A78E9F /* Automator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987E53662955AB4200A78E9F /* Automator.swift */; };
+		987E53732955AB4200A78E9F /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987E53672955AB4200A78E9F /* Logger.swift */; };
+		987E53742955AB4200A78E9F /* NativeAutomatorServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987E53682955AB4200A78E9F /* NativeAutomatorServer.swift */; };
+		987E53752955AB4200A78E9F /* contracts.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987E53692955AB4200A78E9F /* contracts.pb.swift */; };
+		987E53762955AB4200A78E9F /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987E536A2955AB4200A78E9F /* Errors.swift */; };
+		987E53772955AB4200A78E9F /* contracts.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987E536B2955AB4200A78E9F /* contracts.grpc.swift */; };
+		D7D84F576B1F92634D5E59BE66F581B0 /* PatrolAutomator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3624155A83DFACF43D45551457FC9150 /* PatrolAutomator-dummy.m */; };
+		D9CC0424E8F08805281AAFB64586F542 /* PatrolAutomator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DA59FF8BB07AA2CA134716F6E7679836 /* PatrolAutomator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED8672199F4254177CDF4877E9F7765B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7B667DCABD827184E2F7503C081AABA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 405064B1786E96D2D2D0F22DDC86896E;
+			remoteInfo = PatrolAutomator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03EE066127208C11D018CC79E553D6F7 /* PatrolAutomator.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = PatrolAutomator.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		041830BD546F8A92FC7E7CCC1438648B /* PatrolAutomator-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PatrolAutomator-Info.plist"; sourceTree = "<group>"; };
+		13F3F5DF9EF9E3D83793B2910B22CCC0 /* PatrolAutomator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PatrolAutomator-prefix.pch"; sourceTree = "<group>"; };
+		1DF044061EBB52C5236B34BB28E46087 /* Pods-PatrolAutomator_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PatrolAutomator_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		24AE17A7A006DD851D3EB2208B1DA4A4 /* PatrolAutomator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PatrolAutomator.debug.xcconfig; sourceTree = "<group>"; };
+		3405CB601130660EC6409B654C53DC4F /* Pods-PatrolAutomator_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PatrolAutomator_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		3624155A83DFACF43D45551457FC9150 /* PatrolAutomator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PatrolAutomator-dummy.m"; sourceTree = "<group>"; };
+		513997A500FF7AEFF62E00D490D3942E /* PatrolAutomator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PatrolAutomator.modulemap; sourceTree = "<group>"; };
+		53D42F29E10544FB7E93970FD292762F /* Pods-PatrolAutomator_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PatrolAutomator_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7EDBC67BD9DEF83CD1D8E6F3BFB95486 /* Pods-PatrolAutomator_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PatrolAutomator_Tests.modulemap"; sourceTree = "<group>"; };
+		840C3F9272EFD407A979C02C66BAD0DF /* Pods-PatrolAutomator_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PatrolAutomator_Tests-dummy.m"; sourceTree = "<group>"; };
+		8B66E038462ED8C0E20BF3383A14F1E1 /* Pods-PatrolAutomator_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PatrolAutomator_Tests-umbrella.h"; sourceTree = "<group>"; };
+		8D4CEAEA9468F68EDDFE657185D86BF3 /* Pods-PatrolAutomator_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PatrolAutomator_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		987E53602955AB4200A78E9F /* PatrolIntegrationTestRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatrolIntegrationTestRunner.m; sourceTree = "<group>"; };
+		987E53612955AB4200A78E9F /* PatrolIntegrationTestRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatrolIntegrationTestRunner.h; sourceTree = "<group>"; };
+		987E53652955AB4200A78E9F /* PatrolServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatrolServer.swift; sourceTree = "<group>"; };
+		987E53662955AB4200A78E9F /* Automator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Automator.swift; sourceTree = "<group>"; };
+		987E53672955AB4200A78E9F /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		987E53682955AB4200A78E9F /* NativeAutomatorServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeAutomatorServer.swift; sourceTree = "<group>"; };
+		987E53692955AB4200A78E9F /* contracts.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = contracts.pb.swift; sourceTree = "<group>"; };
+		987E536A2955AB4200A78E9F /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		987E536B2955AB4200A78E9F /* contracts.grpc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = contracts.grpc.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A1387D0E88CA8ED417595E815CFF5675 /* PatrolAutomator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PatrolAutomator.release.xcconfig; sourceTree = "<group>"; };
+		A26D0969A491428097E757D069B8FE70 /* Pods-PatrolAutomator_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PatrolAutomator_Tests-Info.plist"; sourceTree = "<group>"; };
+		D3B3504B69192442DEADF9D8F7640E52 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		DA59FF8BB07AA2CA134716F6E7679836 /* PatrolAutomator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PatrolAutomator-umbrella.h"; sourceTree = "<group>"; };
+		E5A3CC9A32AEE1C0DE0861EAC6E3EFC4 /* Pods-PatrolAutomator_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-PatrolAutomator_Tests"; path = Pods_PatrolAutomator_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E89052D21603E6B422B2F19D091ACD52 /* Pods-PatrolAutomator_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PatrolAutomator_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		EDD367A05AFD2C82B21389F4A9158AC2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FE51285E53BA3CF19C1944A77140CF77 /* PatrolAutomator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PatrolAutomator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C53E5358300A41FD6362B8D19D621F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85B2627AF7E48323E62D1917ED2B68CE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8F51AE845BFE0E3C90165A3682DBB9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED8672199F4254177CDF4877E9F7765B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6DE4021BC8315F5E4FC1C63739144E0F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F644F72F603D155A3AB3A9011D0A2178 /* Pods-PatrolAutomator_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		6F81565E6D65EA74F9CD30C3C02A4AB3 /* PatrolAutomator */ = {
+			isa = PBXGroup;
+			children = (
+				987E535F2955AAFA00A78E9F /* Classes */,
+				D3B7FEB35FC8DAD5AB0809E3DB9B8FEA /* Pod */,
+				F56432C2405FB4D9822E03357B0B0338 /* Support Files */,
+			);
+			name = PatrolAutomator;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		94F48C1172A252E2E020C48AF069F46F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE51285E53BA3CF19C1944A77140CF77 /* PatrolAutomator.framework */,
+				E5A3CC9A32AEE1C0DE0861EAC6E3EFC4 /* Pods-PatrolAutomator_Tests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		987E535F2955AAFA00A78E9F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				987E53642955AB4200A78E9F /* AutomatorServer */,
+				987E53612955AB4200A78E9F /* PatrolIntegrationTestRunner.h */,
+				987E53602955AB4200A78E9F /* PatrolIntegrationTestRunner.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		987E53642955AB4200A78E9F /* AutomatorServer */ = {
+			isa = PBXGroup;
+			children = (
+				987E53652955AB4200A78E9F /* PatrolServer.swift */,
+				987E53662955AB4200A78E9F /* Automator.swift */,
+				987E53672955AB4200A78E9F /* Logger.swift */,
+				987E53682955AB4200A78E9F /* NativeAutomatorServer.swift */,
+				987E53692955AB4200A78E9F /* contracts.pb.swift */,
+				987E536A2955AB4200A78E9F /* Errors.swift */,
+				987E536B2955AB4200A78E9F /* contracts.grpc.swift */,
+			);
+			path = AutomatorServer;
+			sourceTree = "<group>";
+		};
+		C3CA01FDBD7DE3572F49FE9994C5F02F /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6F81565E6D65EA74F9CD30C3C02A4AB3 /* PatrolAutomator */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				C3CA01FDBD7DE3572F49FE9994C5F02F /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				94F48C1172A252E2E020C48AF069F46F /* Products */,
+				6DE4021BC8315F5E4FC1C63739144E0F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3B7FEB35FC8DAD5AB0809E3DB9B8FEA /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				D3B3504B69192442DEADF9D8F7640E52 /* LICENSE */,
+				03EE066127208C11D018CC79E553D6F7 /* PatrolAutomator.podspec */,
+				EDD367A05AFD2C82B21389F4A9158AC2 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		F56432C2405FB4D9822E03357B0B0338 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				513997A500FF7AEFF62E00D490D3942E /* PatrolAutomator.modulemap */,
+				3624155A83DFACF43D45551457FC9150 /* PatrolAutomator-dummy.m */,
+				041830BD546F8A92FC7E7CCC1438648B /* PatrolAutomator-Info.plist */,
+				13F3F5DF9EF9E3D83793B2910B22CCC0 /* PatrolAutomator-prefix.pch */,
+				DA59FF8BB07AA2CA134716F6E7679836 /* PatrolAutomator-umbrella.h */,
+				24AE17A7A006DD851D3EB2208B1DA4A4 /* PatrolAutomator.debug.xcconfig */,
+				A1387D0E88CA8ED417595E815CFF5675 /* PatrolAutomator.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/PatrolAutomator";
+			sourceTree = "<group>";
+		};
+		F644F72F603D155A3AB3A9011D0A2178 /* Pods-PatrolAutomator_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				7EDBC67BD9DEF83CD1D8E6F3BFB95486 /* Pods-PatrolAutomator_Tests.modulemap */,
+				8D4CEAEA9468F68EDDFE657185D86BF3 /* Pods-PatrolAutomator_Tests-acknowledgements.markdown */,
+				E89052D21603E6B422B2F19D091ACD52 /* Pods-PatrolAutomator_Tests-acknowledgements.plist */,
+				840C3F9272EFD407A979C02C66BAD0DF /* Pods-PatrolAutomator_Tests-dummy.m */,
+				53D42F29E10544FB7E93970FD292762F /* Pods-PatrolAutomator_Tests-frameworks.sh */,
+				A26D0969A491428097E757D069B8FE70 /* Pods-PatrolAutomator_Tests-Info.plist */,
+				8B66E038462ED8C0E20BF3383A14F1E1 /* Pods-PatrolAutomator_Tests-umbrella.h */,
+				3405CB601130660EC6409B654C53DC4F /* Pods-PatrolAutomator_Tests.debug.xcconfig */,
+				1DF044061EBB52C5236B34BB28E46087 /* Pods-PatrolAutomator_Tests.release.xcconfig */,
+			);
+			name = "Pods-PatrolAutomator_Tests";
+			path = "Target Support Files/Pods-PatrolAutomator_Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		898284678F5FB82D4C4FA68F22711CF9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				657C460A366184F7BA558D43C060DFF8 /* Pods-PatrolAutomator_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD86FD4A058D4FCE28082E8D774DBC62 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9CC0424E8F08805281AAFB64586F542 /* PatrolAutomator-umbrella.h in Headers */,
+				987E536E2955AB4200A78E9F /* PatrolIntegrationTestRunner.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		405064B1786E96D2D2D0F22DDC86896E /* PatrolAutomator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84FD292FC017D583C7DA1EAA9AB50DB9 /* Build configuration list for PBXNativeTarget "PatrolAutomator" */;
+			buildPhases = (
+				AD86FD4A058D4FCE28082E8D774DBC62 /* Headers */,
+				3CAE92E3A12FA1EC89070A5FBF7AB6EC /* Sources */,
+				4C53E5358300A41FD6362B8D19D621F9 /* Frameworks */,
+				B3B12F77856EABB600FD330E06E183FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PatrolAutomator;
+			productName = PatrolAutomator;
+			productReference = FE51285E53BA3CF19C1944A77140CF77 /* PatrolAutomator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B8A63956F20B5D383402FF4FA3405FD9 /* Pods-PatrolAutomator_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C740F99F446D4134060598B4F699AF6 /* Build configuration list for PBXNativeTarget "Pods-PatrolAutomator_Tests" */;
+			buildPhases = (
+				898284678F5FB82D4C4FA68F22711CF9 /* Headers */,
+				69028AF1B4350B47E8564D6F0BC89AF7 /* Sources */,
+				D8F51AE845BFE0E3C90165A3682DBB9B /* Frameworks */,
+				6A0BCBF8B2E76C1C42972873E4C4A6A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F8F20E1A3F7AEC2DA3C21B2F8173016 /* PBXTargetDependency */,
+			);
+			name = "Pods-PatrolAutomator_Tests";
+			productName = Pods_PatrolAutomator_Tests;
+			productReference = E5A3CC9A32AEE1C0DE0861EAC6E3EFC4 /* Pods-PatrolAutomator_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					405064B1786E96D2D2D0F22DDC86896E = {
+						LastSwiftMigration = 1420;
+					};
+				};
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 94F48C1172A252E2E020C48AF069F46F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				405064B1786E96D2D2D0F22DDC86896E /* PatrolAutomator */,
+				B8A63956F20B5D383402FF4FA3405FD9 /* Pods-PatrolAutomator_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6A0BCBF8B2E76C1C42972873E4C4A6A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3B12F77856EABB600FD330E06E183FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CAE92E3A12FA1EC89070A5FBF7AB6EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				987E53742955AB4200A78E9F /* NativeAutomatorServer.swift in Sources */,
+				987E53752955AB4200A78E9F /* contracts.pb.swift in Sources */,
+				987E53712955AB4200A78E9F /* PatrolServer.swift in Sources */,
+				987E536D2955AB4200A78E9F /* PatrolIntegrationTestRunner.m in Sources */,
+				987E53762955AB4200A78E9F /* Errors.swift in Sources */,
+				987E53732955AB4200A78E9F /* Logger.swift in Sources */,
+				987E53722955AB4200A78E9F /* Automator.swift in Sources */,
+				D7D84F576B1F92634D5E59BE66F581B0 /* PatrolAutomator-dummy.m in Sources */,
+				987E53772955AB4200A78E9F /* contracts.grpc.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69028AF1B4350B47E8564D6F0BC89AF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				652262FCE66812D672541F4AD2FFAFC9 /* Pods-PatrolAutomator_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4F8F20E1A3F7AEC2DA3C21B2F8173016 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PatrolAutomator;
+			target = 405064B1786E96D2D2D0F22DDC86896E /* PatrolAutomator */;
+			targetProxy = 7B667DCABD827184E2F7503C081AABA0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		658F6C400C12F5FD5BA97EC2BF097E93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1387D0E88CA8ED417595E815CFF5675 /* PatrolAutomator.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PatrolAutomator/PatrolAutomator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PatrolAutomator/PatrolAutomator-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PatrolAutomator/PatrolAutomator.modulemap";
+				PRODUCT_MODULE_NAME = PatrolAutomator;
+				PRODUCT_NAME = PatrolAutomator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8342697BA389689797113CAC0B3B6EAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3405CB601130660EC6409B654C53DC4F /* Pods-PatrolAutomator_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PatrolAutomator_Tests/Pods-PatrolAutomator_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PatrolAutomator_Tests/Pods-PatrolAutomator_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8CB1F4F64021C38266CD60441A74FDE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DF044061EBB52C5236B34BB28E46087 /* Pods-PatrolAutomator_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PatrolAutomator_Tests/Pods-PatrolAutomator_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PatrolAutomator_Tests/Pods-PatrolAutomator_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		DBA8D4F1C383E1DB9A3C8A2F94767C62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24AE17A7A006DD851D3EB2208B1DA4A4 /* PatrolAutomator.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PatrolAutomator/PatrolAutomator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PatrolAutomator/PatrolAutomator-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PatrolAutomator/PatrolAutomator.modulemap";
+				PRODUCT_MODULE_NAME = PatrolAutomator;
+				PRODUCT_NAME = PatrolAutomator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
+				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C740F99F446D4134060598B4F699AF6 /* Build configuration list for PBXNativeTarget "Pods-PatrolAutomator_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8342697BA389689797113CAC0B3B6EAE /* Debug */,
+				8CB1F4F64021C38266CD60441A74FDE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84FD292FC017D583C7DA1EAA9AB50DB9 /* Build configuration list for PBXNativeTarget "PatrolAutomator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBA8D4F1C383E1DB9A3C8A2F94767C62 /* Debug */,
+				658F6C400C12F5FD5BA97EC2BF097E93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
